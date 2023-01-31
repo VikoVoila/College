@@ -1,0 +1,51 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+.navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-item a {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: #1097d6;
+}
+
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  border-radius: 15px;
+  bottom: 0;
+  left: 0;
+  background-color: #1097d6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.login-btn {
+  position: relative;
+  background-color: #1097d6;
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-btn:hover{
+    color: #000;
+    background-color: ;
+}

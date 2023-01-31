@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-md py-3 navbar-light bg-white">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img
@@ -18,6 +18,10 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- <div class="conatiner">
+      <input type="text" [(ngModel)]="enteredText">
+      <button (click)="onBtnClick()">CLick</button>
+    </div> -->
     <div class="collapse navbar-collapse" id="navmenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -27,18 +31,25 @@
           <a class="nav-link active" href="#">About us</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" href="#">Academics</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" href="#">Alumni</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Media</a>
+          <a class="nav-link active" href="#">Facilities</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Careers</a>
+          <a class="nav-link active" href="#">Hospital</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link active" href="#">Careers</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link active" href="#">Contact us</a>
         </li>
       </ul>
+      <button type="button" class="login-btn">Login</button>
     </div>
   </div>
 </nav>
