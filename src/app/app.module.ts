@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FooterPageComponent } from './pages/footer-page/footer-page.component';
+import { InfoBarComponent } from './info-bar/info-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
     HomePageComponent,
-    FooterPageComponent
+    FooterPageComponent,
+    InfoBarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
